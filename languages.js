@@ -3,6 +3,17 @@
  'use strict';
  const codes=['it','en','zh-Hans','ar','fil','nap'];
  const rows=[
+["Social","Social","社交媒体","التواصل الاجتماعي","Social","Social"],
+["Ci vediamo anche qui","Find Tony here, too","也在这里关注 Tony","تابع توني هنا أيضاً","Hanapin din si Tony rito","Ce vedimmo pure ccà"],
+["Tony, ogni giorno.","Tony, every day.","每天都有 Tony。","توني، كل يوم.","Tony, araw-araw.","Tony, ogne juorno."],
+["Una canzone, un video, un saluto. Scegli il tuo social e resta in compagnia di Tony.","A song, a video, a hello. Follow Tony on your favourite social platform.","一首歌、一段视频、一声问候。选择你喜欢的平台，关注 Tony。","أغنية وفيديو وتحية. اختر منصتك وتابع توني.","Kanta, video, o pagbati. Sundan si Tony sa paborito mong social platform.","Na canzona, nu video, nu saluto. Sceglie ’o social tujo e rieste cu Tony."],
+["Notizie, video e novità dal mondo di Tony.","News, videos and updates from Tony’s world.","Tony 世界的新闻、视频与动态。","أخبار وفيديوهات وجديد عالم توني.","Balita, video at mga update mula sa mundo ni Tony.","Nutizie, video e nuvità d’ ’o munno ’e Tony."],
+["Reel, immagini e momenti da condividere.","Reels, photos and moments to share.","短视频、照片与值得分享的时刻。","ريلز وصور ولحظات للمشاركة.","Mga reel, larawan at sandaling maibabahagi.","Reel, fotografie e mumente ’a spartere."],
+["Le canzoni e i video sul canale ufficiale.","Songs and videos on the official channel.","官方频道的歌曲与视频。","الأغاني والفيديوهات على القناة الرسمية.","Mga kanta at video sa opisyal na channel.","’E canzone e ’e video ncopp’ ’o canale ufficiale."],
+["Segui su Facebook","Follow on Facebook","在 Facebook 关注","تابع على Facebook","Sundan sa Facebook","Sigue ncopp’ a Facebook"],
+["Seguimi su Instagram","Follow on Instagram","在 Instagram 关注","تابع على Instagram","Sundan sa Instagram","Sigueme ncopp’ a Instagram"],
+["Ascolta su YouTube","Listen on YouTube","在 YouTube 收听","استمع على YouTube","Makinig sa YouTube","Siente ncopp’ a YouTube"],
+["Vai al contenuto","Skip to content","跳到内容","انتقل إلى المحتوى","Lumaktaw sa nilalaman","Va’ ô cuntenuto"],
  ['Tony Vesuvio Fan Club — Tony canta. Napoli risponde.','Tony Vesuvio Fan Club — Tony sings. Naples answers.','Tony Vesuvio 歌迷会 — Tony 歌唱，那不勒斯回应。','نادي محبي Tony Vesuvio — توني يغني ونابولي تجيب.','Tony Vesuvio Fan Club — Umaawit si Tony. Sumasagot ang Naples.','Tony Vesuvio Fan Club — Tony canta. Napule risponne.'],
  ['Da Napoli, con sentimento · Tony Vesuvio Fan Club','From Naples, with feeling · Tony Vesuvio Fan Club','来自那不勒斯，满怀深情 · Tony Vesuvio 歌迷会','من نابولي بكل إحساس · نادي محبي Tony Vesuvio','Mula sa Naples, nang buong puso · Tony Vesuvio Fan Club','’A Napule, cu ’o core · Tony Vesuvio Fan Club'],
  ['La musica · Il cuore · Il fan club','The music · The heart · The fan club','音乐 · 真心 · 歌迷会','الموسيقى · القلب · نادي المحبين','Musika · Puso · Fan club','’A museca · ’O core · ’O fan club'],
@@ -112,15 +123,15 @@
  const originalTitle=document.title;
  const imageDescriptions={
   'logo-ufficiale-tony-vesuvio.png':['Tony Vesuvio official logo','Tony Vesuvio 官方标志','الشعار الرسمي لتوني فيزوفيو','Opisyal na logo ni Tony Vesuvio','’O logo ufficiale ’e Tony Vesuvio'],
-  'Tony-Vesuvio-banner-esteso-RGB.png':['Tony Vesuvio in front of the Bay of Naples at sunset','日落时那不勒斯湾前的 Tony Vesuvio','توني فيزوفيو أمام خليج نابولي عند الغروب','Tony Vesuvio sa harap ng Bay of Naples sa paglubog ng araw','Tony Vesuvio ’nnanze ô Golfo ’e Napule ô tramonto'],
-  'tony-arena.png':['Fictional scene: Tony sings in a packed arena with fans holding banners','虚构场景：Tony 在挤满举着横幅的歌迷的竞技场演唱','مشهد خيالي: توني يغني في ساحة مزدحمة بالمحبين واللافتات','Kathang-isip: umaawit si Tony sa arenang puno ng mga fan na may bandila','Scena ’e fantasia: Tony canta dint’ a n’arena chiena ’e fan cu ’e striscione'],
-  'tony-pub.png':['Fictional scene: Tony sings with a guitarist in a small venue','虚构场景：Tony 与吉他手在小酒馆演唱','مشهد خيالي: توني يغني مع عازف غيتار في مكان صغير','Kathang-isip: umaawit si Tony kasama ang gitarista sa maliit na lugar','Scena ’e fantasia: Tony canta cu nu chitarrista dint’ a nu lucale piccerillo'],
-  'tony-matrimonio.png':['Fictional wedding: Tony sings with the newlyweds and a Vesuvius-shaped cake arrives','虚构婚礼：Tony 与新人合唱，侍者端来维苏威形状的蛋糕','زفاف خيالي: توني يغني مع العروسين وتصل كعكة على شكل فيزوف','Kathang-isip na kasal: kumakanta si Tony kasama ang bagong kasal at may keyk na hugis Vesuvius','Matrimonio ’e fantasia: Tony canta cu ’e spuse e arriva na torta a Vesuvio'],
-  'tony-premio-posillipo.png':['Fictional award ceremony: Tony receives the Posillipo Oscar for Neomelodic Song','虚构颁奖礼：Tony 获得波西利波新旋律歌曲奥斯卡奖','حفل خيالي: توني يتسلم أوسكار الأغنية النيوميلودية في بوسيليبو','Kathang-isip na parangal: tinatanggap ni Tony ang Posillipo Oscar para sa Neomelodic Song','Premiazzione ’e fantasia: Tony piglia ll’Oscar d’ ’a canzona neomelodica ’e Pusilleco'],
+  'Tony-Vesuvio-banner-esteso-RGB.jpg':['Tony Vesuvio in front of the Bay of Naples at sunset','日落时那不勒斯湾前的 Tony Vesuvio','توني فيزوفيو أمام خليج نابولي عند الغروب','Tony Vesuvio sa harap ng Bay of Naples sa paglubog ng araw','Tony Vesuvio ’nnanze ô Golfo ’e Napule ô tramonto'],
+  'tony-arena.jpg':['Fictional scene: Tony sings in a packed arena with fans holding banners','虚构场景：Tony 在挤满举着横幅的歌迷的竞技场演唱','مشهد خيالي: توني يغني في ساحة مزدحمة بالمحبين واللافتات','Kathang-isip: umaawit si Tony sa arenang puno ng mga fan na may bandila','Scena ’e fantasia: Tony canta dint’ a n’arena chiena ’e fan cu ’e striscione'],
+  'tony-pub.jpg':['Fictional scene: Tony sings with a guitarist in a small venue','虚构场景：Tony 与吉他手在小酒馆演唱','مشهد خيالي: توني يغني مع عازف غيتار في مكان صغير','Kathang-isip: umaawit si Tony kasama ang gitarista sa maliit na lugar','Scena ’e fantasia: Tony canta cu nu chitarrista dint’ a nu lucale piccerillo'],
+  'tony-matrimonio.jpg':['Fictional wedding: Tony sings with the newlyweds and a Vesuvius-shaped cake arrives','虚构婚礼：Tony 与新人合唱，侍者端来维苏威形状的蛋糕','زفاف خيالي: توني يغني مع العروسين وتصل كعكة على شكل فيزوف','Kathang-isip na kasal: kumakanta si Tony kasama ang bagong kasal at may keyk na hugis Vesuvius','Matrimonio ’e fantasia: Tony canta cu ’e spuse e arriva na torta a Vesuvio'],
+  'tony-premio-posillipo.jpg':['Fictional award ceremony: Tony receives the Posillipo Oscar for Neomelodic Song','虚构颁奖礼：Tony 获得波西利波新旋律歌曲奥斯卡奖','حفل خيالي: توني يتسلم أوسكار الأغنية النيوميلودية في بوسيليبو','Kathang-isip na parangal: tinatanggap ni Tony ang Posillipo Oscar para sa Neomelodic Song','Premiazzione ’e fantasia: Tony piglia ll’Oscar d’ ’a canzona neomelodica ’e Pusilleco'],
   'tony-ritratto-ufficiale.png':['Tony Vesuvio invites you to speak, with his hand outstretched','Tony Vesuvio 伸手邀请你说出心里话','توني فيزوفيو يمد يده ويدعوك للكلام','Inaanyayahan ka ni Tony Vesuvio na magsalita habang nakalahad ang kamay','Tony Vesuvio te fa cenno ’e parlà cu ’a mano stesa']
  };
  const images=[...document.querySelectorAll('img')].map(element=>({element,original:element.alt,key:element.getAttribute('src').split('/').pop()}));
- const titles=rows[0];
+ const titles=dictionary.get(originalTitle);
  const descriptions=[
   'Tony Vesuvio Fan Club. Le canzoni, i vostri messaggi e un mondo tutto da cantare. Da Napoli, con sentimento.',
   'Tony Vesuvio Fan Club. Songs, your messages and a world to sing together. From Naples, with feeling.',
