@@ -88,3 +88,27 @@ main .wrap{max-width:1180px}
 }
 @media(prefers-reduced-motion:reduce){.social-card,.button{transition:none}.social-card:hover,.button:hover{transform:none}}
 
+
+/* Social: fascia compatta con tre collegamenti chiaramente riconoscibili. */
+.social-section{padding-block:16px}
+.social-intro{align-items:center;gap:16px;margin-bottom:12px}
+.social-intro .eyebrow{font-size:9px;margin-bottom:5px}
+.social-intro h2{font-size:clamp(25px,2.8vw,32px);line-height:1.1}
+.social-intro p{font-size:12px;line-height:1.4;max-width:330px}
+.social-grid{gap:12px}
+.social-card{display:grid;grid-template-columns:24px minmax(0,1fr);gap:4px 10px;padding:12px 14px;border-top-width:2px;align-content:center}
+.social-card svg{width:22px;height:22px;grid-column:1;grid-row:1/4;margin-top:1px}
+.social-card h3,.social-card .social-handle,.social-card .social-action{grid-column:2}
+.social-card h3{font-size:17px;line-height:1.2}
+.social-card .social-handle{font-size:11px;line-height:1.3}
+.social-card p{display:none}
+.social-card .social-action{font-size:12px;line-height:1.3;padding-top:2px;margin-top:0}
+@media(max-width:767px){
+ .social-section{padding-block:14px}
+ .social-intro{margin-bottom:10px}
+ .social-intro p{display:none}
+ .social-grid{gap:7px}
+ .social-card{grid-template-columns:22px minmax(0,1fr);padding:10px 12px;gap:3px 10px;border-top-width:1px}
+ .social-card h3{font-size:16px}
+ .social-card svg{grid-row:1/4}
+}
