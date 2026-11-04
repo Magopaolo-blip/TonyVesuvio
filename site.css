@@ -243,3 +243,8 @@ html[lang=zh-Hans] h1,html[lang=zh-Hans] h2,html[lang=zh-Hans] h3{line-height:1.
 @media(max-width:767px){.record-cover-link{grid-column:1;grid-row:1/5}.record-cover-link img{max-height:240px}.record .number,.record h3,.record-actions,.record>.small{grid-column:2}}
 @media(max-width:370px){.record-cover-link{grid-column:1;grid-row:auto}.record .number,.record h3,.record-actions,.record>.small{grid-column:1}.record-cover-link img{max-height:245px}}
 
+
+/* Le nuove copertine sono panoramiche: mostriamo tutta l’illustrazione. */
+.record-cover-link img{aspect-ratio:16/9;object-fit:contain;background:#10244a}
+.chat-topics{display:flex;flex-wrap:wrap;gap:8px;margin:2px 0 12px}.chat-topic{min-height:40px;padding:7px 13px;border:1px solid var(--lemon);background:transparent;color:var(--paper);font-weight:700;cursor:pointer}.chat-topic:hover,.chat-topic:focus-visible{background:var(--lemon);color:var(--deep)}.chat-log{min-height:92px;max-height:260px;overflow:auto}.chat-reply{padding:13px 15px;background:#fff9e8;border-left:4px solid var(--red);border-radius:2px;line-height:1.5}.chat-reply strong{color:var(--red)}.chat-status{min-height:1.5em}.chat-topics button{font-size:13px}
+@media(max-width:650px){.chat-topics{display:grid;grid-template-columns:1fr 1fr}.chat-topic{min-height:44px}.chat-log{max-height:220px}}
