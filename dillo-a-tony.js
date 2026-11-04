@@ -17,6 +17,7 @@
     fil:{label:'Ano ang gusto mong sabihin kay Tony?',placeholder:'Tanong, alay, o saloobin…',send:'Sabihin kay Tony ↗',thinking:'Nag-iisip si Tony…',topics:['Musika','Pag-ibig','Naples','Mahirap na araw'],greet:'Uy! Maupo ka; dito pati magandang umaga, may kasamang banda.',disclaimer:'Masayang awtomatikong tagasagot na hango sa karakter ni Tony. Nananatili sa device na ito ang mga mensahe; hindi ipinapadala, sine-save, o inilalathala.',private:'Huwag na tayong maglagay ng personal na contact details; nasa backstage ang phone ni Tony.',safe:'Para sa seryosong bagay, makipag-usap sa taong pinagkakatiwalaan mo. Kathang-isip na laro lang ito.'},
     nap:{label:'Che vuò dicere a Tony?',placeholder:'Na dimanna, na dedica, nu penziero…',send:'Dincello a Tony ↗',thinking:'Tony sta penzanno…',topics:['’A museca','’Ammore','Napule','Jurnata storta'],greet:'Uè! Assettateve, ca ccà pure ’o buongiorno trase cu ll’orchestra.',disclaimer:'Nu risponditore automatico ’e fantasia, ispirato ô personaggio ’e Tony. ’E messagge restano sulo ’ncopp’ a stu dispositivo: nun se mannano, nun se salvano e nun se pubblecano.',private:'Meglio senza recapiti personali: Tony tene ’o telefono ’int’ ô camerino.',safe:'Pe’ ’e cose serie ce vò na persona vera vicino. Sta chat è sulo nu juoco ’e fantasia.'}
   };
+  const conversation = window.TonyConversation.createConversation();
   const answers = {
     music:['Quella che ti resta in testa! Se dopo tre giorni non esce, ormai paga l’affitto.','The one that sticks in your head! If it’s still there after three days, it owes you rent.','就选那首挥之不去的歌！三天后还在脑海里，就该交房租啦。','الأغنية التي لا تفارق بالك! إذا بقيت ثلاثة أيام، فعليها أن تدفع الإيجار.','Yung kantang ayaw umalis sa isip mo! Kapag tatlong araw na, dapat nagbabayad na ng upa.','Chilla ca nun te vo’ lassà ’a capa! Si doppo tre juorne sta ancora llà, adda pavà ’o fitto.'],
     love:['L’amore è come il caffè: se è buono, non lo lasci raffreddare. Se scotta, soffia cantando.','Love is like coffee: if it’s good, don’t let it go cold. If it’s hot, blow on it in tune.','爱情像咖啡：好喝就别让它凉了；太烫的话，就边唱边吹一吹。','الحب مثل القهوة: إذا كان جميلاً فلا تدعه يبرد، وإذا كان ساخناً فانفخ عليه وأنت تغني.','Parang kape ang pag-ibig: kapag masarap, huwag palamigin. Kapag mainit, hipan habang kumakanta.','’Ammore è comm’ ’o cafè: si è buono nun ’o fa’ addiventà friddo. Si coce, soffia cantanno.'],
@@ -44,6 +45,7 @@
     label.textContent=t.label;input.placeholder=t.placeholder;submit.textContent=t.send;
     topics.forEach((b,i)=>b.textContent=t.topics[i]);
     form.querySelector('#chat-disclaimer').textContent=t.disclaimer;
+    if(l==='it'||l==='nap')form.querySelector('#chat-disclaimer').textContent='Risponditore gratuito con risposte predefinite, non una AI generativa. Ricorda il dialogo finché questa pagina resta aperta; cambiando lingua il contesto riparte. I messaggi non vengono inviati o salvati. Non inviare recapiti. Scrivi «ricominciamo» per ripartire. Le risposte conversazionali in napoletano sono in italiano.';
     if(log.dataset.started!=='yes')log.innerHTML=`<p class="chat-reply"><strong>Tony:</strong> ${t.greet}</p>`;
     if(l==='ar'){form.dir='rtl';log.dir='rtl';}else{form.dir='ltr';log.dir='ltr';}
   }
@@ -60,15 +62,16 @@
     p.append(strong,document.createTextNode(text));log.appendChild(p);log.scrollTop=log.scrollHeight;
   }
   function send(text,preferred){
+    if(submit.disabled)return;
     const clean=text.trim();if(!clean)return;
     const l=language(),t=locale[l];
     if(/(?:[\w.+-]+@[\w.-]+\.[A-Za-z]{2,}|(?:\+?\d[\d ()-]{7,}\d))/.test(clean)){status.textContent=t.private;input.focus();return;}
     status.textContent='';log.dataset.started='yes';addMessage(l==='ar'?'أنت':l==='zh-Hans'?'你':l==='fil'?'Ikaw':l==='en'?'You':l==='nap'?'Tu':'Tu',clean);
     input.value='';submit.disabled=true;status.textContent=t.thinking;
-    window.setTimeout(()=>{const key=category(clean,preferred);addMessage(l==='ar'?'Tony':l==='zh-Hans'?'Tony':l==='fil'?'Tony':l==='en'?'Tony':'Tony',answers[key][['it','en','zh-Hans','ar','fil','nap'].indexOf(l)]);submit.disabled=false;status.textContent='';input.focus();},500);
+    window.setTimeout(()=>{const key=category(clean,preferred);addMessage('Tony',(l==='it'||l==='nap') ? conversation.reply(clean,preferred) : answers[key][['it','en','zh-Hans','ar','fil','nap'].indexOf(l)]);submit.disabled=false;status.textContent='';input.focus();},500);
   }
   form.addEventListener('submit',event=>{event.preventDefault();send(input.value);});
   topics.forEach(button=>button.addEventListener('click',()=>send(button.textContent,button.dataset.topic==='musica'?'music':button.dataset.topic==='amore'?'love':button.dataset.topic==='napoli'?'naples':'day')));
-  langSelect?.addEventListener('change',setLanguage);
+  langSelect?.addEventListener('change',()=>{conversation.reset();setLanguage();});
   setLanguage();
 })();
