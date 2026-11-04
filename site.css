@@ -1,0 +1,240 @@
+:root{color-scheme:light;--paper:#fff5df;--blue:#123e82;--deep:#142d50;--red:#bd3f2d;--lemon:#f5cd4a;--muted:#5c6570;--line:#c8c1b0}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:20px}body{margin:0;background:var(--paper);color:var(--deep);font-family:Arial,Helvetica,sans-serif;line-height:1.6}a{color:inherit;text-underline-offset:5px}img{display:block;max-width:100%;height:auto}figure{margin:0}h1,h2,h3,p{margin-top:0}h1,h2,h3{font-family:Georgia,'Times New Roman',serif;font-weight:400;line-height:1.06}h2{font-size:clamp(38px,4.7vw,66px);letter-spacing:-.035em}h3{font-size:28px}button,input,textarea{font:inherit}.wrap{width:min(1240px,88%);margin:auto}.section{padding:90px 0}.eyebrow{text-transform:uppercase;font-weight:800;font-size:11px;letter-spacing:.18em;display:block;margin-bottom:20px;color:var(--red)}.small{font-size:12px;color:var(--muted);line-height:1.6}.button{display:inline-flex;align-items:center;justify-content:center;gap:20px;padding:14px 25px;background:var(--blue);color:var(--paper);border:1px solid var(--blue);border-radius:3px;text-decoration:none;font-weight:700;font-size:14px;box-shadow:4px 4px 0 #b9c6cc}.button:hover{background:var(--deep)}a:focus-visible,button:focus-visible{outline:3px solid var(--red);outline-offset:5px}button:disabled{cursor:not-allowed;opacity:.62}.maiolica{height:22px;border-block:2px solid var(--blue);background-color:var(--paper);background-image:radial-gradient(circle at 50% 50%,var(--red) 0 2px,transparent 3px),conic-gradient(from 45deg at 50% 50%,transparent 0 12.5%,var(--blue) 12.5% 25%,transparent 25% 37.5%,var(--blue) 37.5% 50%,transparent 50% 62.5%,var(--blue) 62.5% 75%,transparent 75% 87.5%,var(--blue) 87.5%);background-size:36px 18px}
+.topline{background:var(--blue);color:var(--paper);text-align:center;font-size:10px;letter-spacing:.16em;text-transform:uppercase;padding:9px 15px}.header{padding:23px 0;display:flex;justify-content:space-between;align-items:center;gap:25px}.brand{text-decoration:none;display:flex;align-items:center;gap:12px}.brand-seal{display:grid;place-items:center;width:43px;height:43px;border:1px solid var(--red);border-radius:50%;font-family:Georgia,serif;font-size:21px;font-style:italic;color:var(--red)}.brand-name{font-family:Georgia,serif;font-size:24px;line-height:1.1}.brand-name small{display:block;font-family:Arial,sans-serif;font-size:9px;letter-spacing:.2em;text-transform:uppercase;margin-top:5px}nav{display:flex;flex-wrap:wrap;gap:24px}nav a{font-size:12px;font-weight:700;text-decoration:none}nav a:hover{text-decoration:underline}.banner{width:100%;height:auto;border-block:1px solid var(--blue)}
+.opening{display:grid;grid-template-columns:1.3fr 1fr;gap:65px;align-items:end;padding-block:66px 80px}.opening h1{font-size:clamp(56px,7vw,104px);letter-spacing:-.055em;margin:0}.opening h1 em{font-weight:400;color:var(--red)}.opening p{font-size:18px;max-width:420px}.opening .secondary{display:block;margin-top:20px;font-size:13px}.arena{background:var(--blue);color:var(--paper);padding:44px 0 50px}.arena-head{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:30px}.arena h2{font-size:clamp(35px,4vw,54px);margin:0}.arena .eyebrow{color:var(--lemon)}.arena .aside{max-width:290px;font-size:14px}.arena img{width:100%;aspect-ratio:3/2;object-fit:contain;border:1px solid #c9d1df}.arena .small{color:#d5dfef;margin:14px 0 0}
+.section-heading{display:flex;justify-content:space-between;gap:35px;align-items:end;margin-bottom:40px}.section-heading h2{margin:0}.section-heading p{max-width:320px;margin-bottom:0;font-size:15px}.records{display:grid;grid-template-columns:repeat(3,1fr);gap:32px}.record{border-bottom:1px solid var(--blue);padding-bottom:24px}.record img{width:100%;aspect-ratio:1;object-fit:contain;background:#fff4e5}.record .number{font-size:10px;font-weight:700;letter-spacing:.15em;color:var(--red);display:block;margin:22px 0 9px}.record h3{font-size:26px;min-height:58px;margin-bottom:18px}.record-actions{display:flex;align-items:center;gap:16px;flex-wrap:wrap}.listen{background:var(--blue);color:var(--paper);border:0;border-radius:2px;padding:10px 18px;font-weight:700;font-size:13px}.record-actions a{font-size:12px}.record .small{margin:12px 0 0}
+.club{background:#eaeedc;border-top:1px solid var(--blue);padding:80px 0}.club-layout{display:grid;grid-template-columns:1.15fr 1fr;align-items:center;gap:65px}.photo-frame{padding:10px;background:var(--paper);border:1px solid var(--blue);box-shadow:8px 8px 0 #c3cbbc;transform:rotate(-1deg)}.photo-frame img{width:100%;aspect-ratio:3/2;object-fit:contain}.photo-frame figcaption{font-size:11px;padding:10px 6px 2px;color:var(--muted)}.club-copy p{font-size:17px}.club-copy h2 em{color:var(--red)}
+.talk{background:var(--blue);color:var(--paper)}.talk .eyebrow{color:var(--lemon)}.talk .section-heading p{font-family:Georgia,serif;font-size:24px;font-style:italic}.talk-layout{display:grid;grid-template-columns:1fr 1fr;gap:60px}.talk label{display:block;font-size:13px;font-weight:700;margin-bottom:8px}.talk input,.talk textarea{width:100%;background:var(--paper);color:var(--deep);border:1px solid var(--paper);border-radius:2px;padding:15px;margin-bottom:20px}.talk .small{display:block;color:#dce4ee}.talk .button{background:var(--lemon);color:var(--deep);border-color:var(--lemon);box-shadow:none;margin-top:14px}.example{border:1px solid #97aecd;padding:30px;align-self:start}.example .tag{display:block;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--lemon);margin-bottom:24px}.example blockquote{font-family:Georgia,serif;font-size:27px;line-height:1.4;margin:20px 0 26px}.example p{font-size:15px}.talk .demo{padding-top:13px}
+.stories{border-bottom:1px solid var(--blue)}.stories-grid{display:grid;grid-template-columns:1fr 1fr;gap:36px}.stories-grid img{width:100%;aspect-ratio:3/2;object-fit:contain;border:1px solid var(--blue)}.stories-grid figcaption{padding-top:25px}.stories-grid h3{font-size:33px;margin-bottom:15px}.stories-grid p{font-size:15px;max-width:480px}.stories .small{margin-top:28px}
+.merch{background:var(--lemon);padding:85px 0}.merch-layout{display:grid;grid-template-columns:1.5fr .7fr;gap:70px;align-items:center}.merch h2{font-size:clamp(48px,6vw,82px)}.merch p{font-size:18px;max-width:620px}.merch .signoff{font-family:Georgia,serif;font-size:24px;font-style:italic}.merch-ticket{border:2px solid var(--blue);padding:30px 24px;text-align:center;outline:1px solid var(--blue);outline-offset:-7px;background:var(--paper);transform:rotate(3deg)}.merch-ticket .star{font-size:40px;color:var(--red);line-height:1.3}.merch-ticket strong{font-family:Georgia,serif;display:block;font-size:34px;line-height:1.12;font-weight:400;margin:15px 0}.merch-ticket p{font-size:13px;margin-bottom:0}.footer{padding-block:35px;display:flex;justify-content:space-between;gap:20px;font-size:12px}.footer p{margin-bottom:0}
+@media(min-width:1500px){.arena img{max-height:760px;background:#0b2c60}}
+@media(max-width:900px){.opening{gap:35px}.club-layout{gap:35px}.records{gap:20px}.record h3{font-size:23px}.talk-layout{gap:30px}.merch-layout{gap:35px}nav{gap:14px}}
+@media(max-width:650px){.wrap{width:88%}.section{padding-block:55px}.header{align-items:start;flex-direction:column;gap:20px}.brand-name{font-size:22px}nav{gap:18px}.topline{font-size:8px}.opening,.club-layout,.talk-layout,.merch-layout{grid-template-columns:1fr}.opening{padding-block:38px 50px;gap:30px}.opening h1{font-size:60px}.opening p{font-size:16px}.arena-head,.section-heading{display:block}.arena .aside{max-width:none;margin-top:22px}.section-heading p{margin-top:22px}.records{grid-template-columns:1fr;gap:38px}.record h3{min-height:0;font-size:30px}.record img{max-height:420px}.club{padding-block:55px}.club-layout{gap:40px}.stories-grid{grid-template-columns:1fr;gap:45px}.stories-grid h3{font-size:30px}.merch{padding-block:55px}.merch-ticket{max-width:320px;justify-self:center}.footer{flex-direction:column;gap:12px}.example{padding:24px}.banner{min-height:0}.arena img{aspect-ratio:3/2}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* Manifesti musicali, insegne dipinte e maioliche. */
+:root{--paper:#fff4dc;--blue:#15458c;--deep:#182d4c;--red:#bc3829;--lemon:#f5c747}
+body{background-color:var(--paper);background-image:radial-gradient(#805c2d09 .65px,transparent .65px);background-size:5px 5px;line-height:1.5}
+.wrap{width:min(1280px,92%)}
+.section{padding-block:48px}
+.eyebrow{font-size:10px;letter-spacing:.15em;margin-bottom:12px}
+h2{font-size:clamp(34px,4vw,54px);font-weight:700;letter-spacing:-.045em}
+.topline{background:var(--red);font-size:10px;padding-block:6px;letter-spacing:.19em;border-bottom:3px solid var(--lemon)}
+.header{padding-block:15px;gap:18px}
+.brand-seal{width:48px;height:48px;border:2px solid var(--blue);outline:1px solid var(--blue);outline-offset:3px;background:var(--lemon);color:var(--blue);border-radius:48% 48% 42% 42%;flex-shrink:0}
+.brand-seal svg{width:36px;height:30px}
+.brand-name{font-weight:bold;font-size:27px;letter-spacing:-.04em}
+.brand-name small{font-weight:600;font-size:8px;letter-spacing:.14em}
+nav{gap:6px}nav a{padding:8px 13px;border:1px solid transparent;border-radius:2px}nav a:hover{border-color:var(--red);color:var(--red);text-decoration:none;background:#fffaf0}
+.banner{border-top:3px solid var(--blue);border-bottom:5px solid var(--red)}
+.opening{padding-block:30px 34px;gap:38px;grid-template-columns:1.3fr 1fr;position:relative}
+.opening h1{font-size:clamp(48px,6.3vw,85px);font-weight:bold;line-height:.98;letter-spacing:-.055em}
+.opening h1 em{font-weight:400;display:inline-block;padding-bottom:8px;background:linear-gradient(var(--lemon),var(--lemon)) left 92%/100% 6px no-repeat}
+.opening .eyebrow{display:inline-block;border-block:1px solid var(--red);padding-block:5px;letter-spacing:.13em}
+.opening p{font-size:16px;max-width:440px;margin-bottom:12px}.opening .secondary{margin-top:12px;font-size:12px}
+.button{padding:11px 20px;gap:14px;box-shadow:3px 3px 0 var(--red);border-radius:0;border:1px solid var(--deep);transition:transform .15s,box-shadow .15s}
+.button:hover{transform:translate(-1px,-1px);box-shadow:4px 4px 0 var(--red)}
+.maiolica{height:33px;background-image:url('assets/maiolica-napoli.svg');background-size:32px 32px;border-block:1px solid var(--blue)}
+.arena{padding:30px 0;background-color:#123771;background-image:radial-gradient(circle at 12% 25%,#ffffff08 0 1px,transparent 1px);background-size:9px 9px;border-bottom:5px solid var(--lemon)}
+.arena>.wrap{display:grid;grid-template-columns:.8fr 1.65fr;gap:30px;align-items:center}
+.arena-head{display:block;margin:0}.arena h2{font-size:clamp(38px,4.3vw,60px);font-weight:400;font-style:italic;line-height:1.03}.arena h2:after{content:'✦';display:block;font-size:32px;color:var(--lemon);margin-top:22px}
+.arena .aside{font-size:14px;margin:16px 0 0;max-width:270px}.arena .eyebrow{font-size:9px;letter-spacing:.12em}
+.arena figure{padding:7px;background:var(--paper);box-shadow:5px 5px 0 #09224c;border:1px solid var(--lemon)}
+.arena img{border:0;max-height:none;background:none;aspect-ratio:3/2;object-fit:contain}
+.arena .small{color:var(--deep);font-size:10px;margin:6px 3px 0}
+.section-heading{gap:25px;margin-bottom:26px;position:relative;padding-bottom:18px;border-bottom:2px solid var(--blue)}
+.section-heading:after{content:'✦';position:absolute;bottom:-12px;left:0;background:var(--paper);padding-right:10px;color:var(--red);font-size:22px;line-height:20px}
+.section-heading p{max-width:330px;font-size:14px}
+.records{gap:20px}
+.record{padding:12px 12px 17px;background:#fffaf0;border:1px solid #c3b392;box-shadow:4px 4px 0 #e6d8ba;position:relative}
+.record img{background:#fff4e5;max-height:300px;object-fit:contain;border-bottom:2px solid var(--red)}
+.record .number{margin:14px 0 8px;font-size:9px;letter-spacing:.12em}
+.record h3{font-size:25px;font-weight:700;line-height:1.06;min-height:53px;margin-bottom:12px}
+.record-actions{gap:10px}.record-actions a{font-size:11px}.listen{padding:9px 14px;border-radius:0;background:var(--red)}
+.record .small{font-size:10px;margin-top:10px}
+.club{padding:44px 0;background:#f4e8cd;border-top:1px solid var(--blue);position:relative}
+.club:before{content:'';position:absolute;inset:0 0 auto;height:8px;background:repeating-linear-gradient(90deg,var(--red) 0 18px,var(--paper) 18px 36px)}
+.club-layout{gap:34px;grid-template-columns:1.1fr 1fr}
+.photo-frame{padding:8px;box-shadow:5px 5px 0 var(--blue);transform:rotate(-1deg)}
+.photo-frame figcaption{font-size:10px;padding-top:7px}
+.club-copy h2{font-size:clamp(34px,3.9vw,52px);margin-bottom:18px}.club-copy p{font-size:15px;margin-bottom:13px}.club-copy .small{font-size:11px}
+.talk{background-color:var(--blue);background-image:linear-gradient(90deg,#ffffff04 1px,transparent 1px);background-size:24px 24px}
+.talk .section-heading{border-color:#fff4dc60}.talk .section-heading:after{background:var(--blue);color:var(--lemon)}
+.talk .section-heading p{font-size:23px;color:var(--lemon)}
+.talk-layout{gap:28px;grid-template-columns:1fr 1fr}.talk label{font-size:12px;margin-bottom:6px}.talk input,.talk textarea{padding:12px;margin-bottom:14px;border-radius:0;border:2px solid #0d2d60}.talk .small{font-size:11px}.talk .demo{padding-top:8px}
+.example{background:var(--paper);color:var(--deep);border:1px solid var(--lemon);padding:25px;box-shadow:5px 5px 0 #0a2a5a;position:relative}
+.example:before{content:'“';font-family:Georgia,serif;color:var(--red);font-size:70px;line-height:.8;display:block;margin-bottom:14px}
+.example .tag{color:var(--red);font-size:9px;margin-bottom:16px}.example blockquote{font-size:clamp(23px,2.2vw,30px);margin:16px 0 20px;font-style:italic;line-height:1.26}.example p{font-size:14px}.example .small{color:#57616d}
+.stories{border:0}.stories-grid{gap:22px}.stories-grid figure{background:#fffaf0;border:1px solid var(--blue);box-shadow:4px 4px 0 #e4d4b0;padding:7px}
+.stories-grid img{border:0}.stories-grid figcaption{padding:18px 13px 3px}.stories-grid .eyebrow{margin-bottom:8px;font-size:9px}.stories-grid h3{font-weight:700;font-size:31px;margin-bottom:10px}.stories-grid p{font-size:14px;margin-bottom:13px}.stories>.small{font-size:10px;margin:18px 0 0}
+.merch{padding:42px 0;border-top:5px solid var(--red);background-color:var(--lemon);background-image:radial-gradient(#a16a1612 .8px,transparent .8px);background-size:6px 6px}
+.merch-layout{gap:35px;grid-template-columns:1.5fr .7fr}.merch h2{font-size:clamp(46px,5.7vw,74px);font-weight:700;line-height:.98;margin-bottom:18px}.merch p{font-size:16px;margin-bottom:17px}.merch .signoff{font-size:23px}.merch a{font-size:13px;font-weight:700}
+.merch-ticket{padding:24px;background-color:var(--paper);background-image:url('assets/maiolica-napoli.svg');background-repeat:repeat-x;background-size:30px;background-position:top center;border-color:var(--red);outline-color:var(--red);box-shadow:4px 5px 0 #b7802860}
+.merch-ticket .star{font-size:33px;margin-top:16px;display:block}.merch-ticket strong{font-size:30px;margin:10px 0}.merch-ticket p{font-size:12px;margin:0}
+.footer{padding-block:22px;font-size:11px}.footer p:first-child{font-family:Georgia,serif;font-size:15px;font-weight:bold;color:var(--blue)}
+@media(min-width:1500px){.arena img{max-height:none}}
+@media(max-width:900px){.arena>.wrap{grid-template-columns:.85fr 1.5fr;gap:20px}.arena h2{font-size:40px}.record h3{font-size:22px}.record-actions{align-items:start;flex-direction:column}nav a{padding-inline:7px}.opening h1{font-size:64px}}
+@media(max-width:650px){.wrap{width:90%}.section{padding-block:32px}.header{gap:14px;padding-block:14px}nav{gap:4px;width:100%;justify-content:space-between}nav a{padding:6px 4px;font-size:11px}.brand-name{font-size:25px}.opening{padding-block:24px 28px;gap:20px;grid-template-columns:1fr}.opening h1{font-size:clamp(45px,10.8vw,65px)}.opening p{font-size:15px}.arena{padding-block:24px}.arena>.wrap{grid-template-columns:1fr;gap:18px}.arena h2{font-size:38px}.arena h2 br{display:none}.arena h2:after{display:none}.arena .aside{max-width:none;margin-top:10px}.arena-head{margin:0}.records{grid-template-columns:1fr;gap:20px}.record{display:grid;grid-template-columns:.95fr 1fr;gap:0 14px;align-content:center;padding:10px}.record img{grid-column:1;grid-row:1/5;height:100%;max-height:none;align-self:center;border-bottom:0}.record .number,.record h3,.record-actions,.record>.small{grid-column:2}.record .number{margin:7px 0}.record h3{min-height:0;font-size:clamp(20px,5.5vw,26px);margin:0 0 10px}.record-actions{gap:7px}.record-actions a{font-size:10px}.listen{font-size:12px;padding:7px 12px}.record>.small{font-size:9px;margin-top:8px}.section-heading{padding-bottom:16px;margin-bottom:22px}.section-heading p{font-size:13px;margin-top:14px}.club{padding-block:30px}.club-layout{grid-template-columns:1fr;gap:28px}.club-copy h2{font-size:38px}.talk-layout{grid-template-columns:1fr;gap:24px}.talk .section-heading p{font-size:21px}.example{padding:21px}.stories-grid{grid-template-columns:1fr;gap:22px}.stories-grid figcaption{padding:15px 10px 0}.stories-grid h3{font-size:29px}.merch{padding-block:30px}.merch-layout{grid-template-columns:1fr;gap:24px}.merch h2{font-size:52px}.merch-ticket{width:min(300px,95%);justify-self:center;transform:rotate(2deg)}.footer{gap:10px}.maiolica{height:27px;background-size:26px 26px}}
+@media(max-width:360px){.record{grid-template-columns:1fr}.record img{grid-column:1;grid-row:auto;max-height:260px}.record .number,.record h3,.record-actions,.record>.small{grid-column:1}.record h3{font-size:25px}.record-actions{flex-direction:row}}
+@media(prefers-reduced-motion:reduce){.button{transition:none}.button:hover{transform:none}}
+
+/* Fondo di ceramica: le maioliche incorniciano pannelli leggibili. */
+.brand-official{display:flex;flex-direction:column;align-items:center;gap:5px;flex-shrink:0}
+.official-logo{width:248px;height:auto;object-fit:contain}
+.brand-caption{font-size:8px;letter-spacing:.15em;text-transform:uppercase;color:var(--blue);font-weight:700}
+.footer-brand img{width:160px;height:auto;object-fit:contain}
+.footer-brand p{font-size:10px!important;font-family:Arial,sans-serif!important;margin:8px 0 0}
+.example:before{display:none}
+.tony-greeting{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:10px;margin:-10px -10px 20px;border-bottom:2px solid var(--red);padding-bottom:0}
+.tony-chat-portrait{width:100%;height:235px;object-fit:contain;object-position:center bottom;filter:drop-shadow(3px 3px 0 #15458c25)}
+.example .tony-speech{position:relative;margin:0 0 18px;background:var(--lemon);color:var(--deep);border:2px solid var(--blue);padding:18px 14px;font-family:Georgia,serif;font-size:clamp(23px,2.4vw,32px);font-weight:700;font-style:italic;line-height:1.1;transform:rotate(3deg);box-shadow:3px 3px 0 var(--red)}
+.tony-speech:before{content:'';position:absolute;left:-12px;top:50%;width:18px;height:18px;background:var(--lemon);border-left:2px solid var(--blue);border-bottom:2px solid var(--blue);transform:rotate(45deg)}
+.tony-speech span{display:block;margin-top:12px;font-family:Arial,sans-serif;font-size:11px;font-style:normal;font-weight:400;line-height:1.4}
+@media(max-width:900px) and (min-width:651px){.official-logo{width:210px}.tony-chat-portrait{height:190px}.example .tony-speech{font-size:23px;padding:14px 10px}}
+@media(max-width:650px){.brand-official{align-self:center}.official-logo{width:245px}.tony-chat-portrait{height:210px}.example .tony-speech{font-size:26px;padding:16px 12px}.footer-brand{margin-bottom:8px}}
+body{background-color:#e9e1c9;background-image:url('assets/maioliche-fondo.png');background-repeat:repeat;background-size:520px 520px}
+main{width:calc(100% - 56px);max-width:1360px;margin:0 auto;box-shadow:0 5px 24px #102e5633}
+.header.wrap,.footer.wrap{width:calc(100% - 56px);max-width:1360px;background:#fff7e8;padding-inline:28px}
+.header.wrap{border-inline:1px solid #b8aa8e}
+.opening.wrap{width:100%;background:#fff7e8;padding-inline:32px}
+.section.wrap{width:100%;background:#fff7e8;padding-inline:32px}
+.arena .wrap,.club .wrap,.talk .wrap,.merch .wrap{width:calc(100% - 64px)}
+.section-heading:after{background:#fff7e8}
+.talk .section-heading:after{background:var(--blue)}
+.maiolica{height:48px;background-image:url('assets/maioliche-fondo.png');background-size:192px 192px;border-block:2px solid var(--blue)}
+.club{border-top:8px solid transparent;border-image:url('assets/maioliche-fondo.png') 40 repeat}
+.club:before{display:none}
+.merch-ticket{background-image:linear-gradient(to bottom,transparent 0 22px,#fff7e8 22px),url('assets/maioliche-fondo.png');background-size:100% 100%,160px 160px;background-repeat:no-repeat,repeat;background-position:center top;border-top-width:14px}
+.footer.wrap{border-top:3px solid var(--blue);margin-bottom:24px}
+@media(max-width:650px){
+ body{background-size:340px 340px}
+ main,.header.wrap,.footer.wrap{width:calc(100% - 20px)}
+ .header.wrap,.footer.wrap{padding-inline:16px}
+ .opening.wrap,.section.wrap{padding-inline:18px}
+ .arena .wrap,.club .wrap,.talk .wrap,.merch .wrap{width:calc(100% - 36px)}
+ .maiolica{height:34px;background-size:136px 136px}
+ .footer.wrap{margin-bottom:10px}
+}
+
+/* Layout finale condiviso fra lingue e dimensioni di schermo. */
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{line-height:1.5}
+main,.header.wrap,.footer.wrap{width:calc(100% - 40px);max-width:1320px}
+.wrap{min-width:0}
+.opening,.arena>.wrap,.records,.club-layout,.talk-layout,.stories-grid,.merch-layout{gap:22px}
+.opening>*,.arena-head,.record,.club-copy,.talk-layout>*,.stories-grid>*,.merch-layout>*{min-width:0}
+.section{padding-block:32px}
+.opening{padding-block:22px 26px;align-items:center}
+.opening h1{font-size:clamp(44px,5.8vw,76px)}
+.opening p{margin-bottom:10px}
+.opening.wrap,.section.wrap{padding-inline:26px}
+.arena,.club,.merch{padding-block:26px}
+.arena .wrap,.club .wrap,.talk .wrap,.merch .wrap{width:calc(100% - 52px)}
+.arena h2{font-size:clamp(34px,3.8vw,50px)}
+.arena h2:after{margin-top:12px;font-size:25px}
+.section-heading{margin-bottom:22px;padding-bottom:14px}
+.section-heading p{margin-top:0}
+.eyebrow{margin-bottom:10px}
+h2{font-size:clamp(32px,3.6vw,48px);margin-bottom:16px}
+.record img{max-height:265px}
+.record h3{font-size:24px;min-height:51px}
+.record-actions a,.small,.record .small,.club-copy .small,.talk .small,.stories>.small{font-size:12px}
+.record .number{font-size:10px}
+.record-actions{gap:8px}
+.button,.listen{min-height:44px}
+nav a{display:inline-flex;align-items:center;min-height:44px}
+.header{padding-block:10px;flex-wrap:wrap}
+.official-logo{width:215px}
+.header nav{justify-content:flex-end;flex:1;gap:2px}
+.header nav a{font-size:12px;padding-inline:9px}
+.brand-caption{font-size:9px;letter-spacing:.08em}
+.language-control{display:flex;align-items:center;gap:7px;flex-shrink:0;color:var(--blue)}
+.language-control label{font-size:12px;font-weight:700}
+.language-control select{font:inherit;font-size:14px;min-height:44px;max-width:168px;background:#fffaf0;color:var(--deep);border:1px solid var(--blue);border-radius:3px;padding:8px 25px 8px 9px}
+select:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid var(--lemon);outline-offset:3px}
+.photo-frame{transform:none}
+.club-copy h2{font-size:clamp(32px,3.6vw,46px);margin-bottom:14px}
+.club-copy p{font-size:15px;margin-bottom:10px}
+.talk-layout{align-items:start}
+.talk input,.talk textarea{font-size:16px;min-height:44px;padding:10px;margin-bottom:12px;resize:vertical;max-width:100%}
+.talk textarea{min-height:115px}
+.talk label{font-size:13px}
+.example{padding:18px}
+.tony-greeting{margin:-5px -4px 14px;gap:8px}
+.tony-chat-portrait{height:185px}
+.example .tony-speech{font-size:clamp(25px,2.8vw,35px);padding:14px 10px;margin-bottom:12px;transform:none}
+.tony-speech span{font-size:12px;margin-top:8px}
+.example blockquote{font-size:24px;margin:12px 0 16px;line-height:1.3}
+.example .tag{font-size:10px;letter-spacing:.07em;margin-bottom:12px}
+.stories-grid figcaption{padding-top:14px}
+.stories-grid h3{font-size:29px;margin-bottom:9px}
+.stories-grid p{margin-bottom:8px}
+.merch h2{font-size:clamp(42px,5vw,65px);margin-bottom:14px}
+.merch p{margin-bottom:12px;font-size:15px}
+.merch .signoff{font-size:22px}
+.merch-ticket{transform:none;padding:20px}
+.merch-ticket .star{margin-top:10px;font-size:28px}
+.merch-ticket strong{font-size:28px}
+.merch-ticket p{font-size:13px}
+.maiolica{height:30px;background-size:120px 120px}
+.footer{align-items:center;padding-block:18px;gap:16px}
+.footer a{min-height:44px;display:inline-flex;align-items:center}
+.footer-brand img{width:140px}
+.footer-brand p{font-size:11px!important}
+.youtube-cta{margin:28px auto 0;padding:22px 24px;max-width:760px;text-align:center;background:#fff7e8;border:2px solid var(--red);box-shadow:5px 5px 0 #e6d8ba}
+.youtube-cta p{margin:0 0 12px;font-size:17px}
+.youtube-cta .button{display:inline-flex;align-items:center;justify-content:center;min-height:46px;margin-bottom:8px}
+.youtube-cta small{display:block;color:#5c4a38}
+.footer-social{max-width:290px}
+.footer-social strong{color:var(--red)}
+.footer-social p{font-size:12px;margin:5px 0}
+@media(max-width:650px){.youtube-cta{margin-top:22px;padding:18px 14px}.youtube-cta p{font-size:15px}.youtube-cta .button{width:100%;padding-inline:12px}.footer-social{max-width:none}}
+img{max-width:100%;height:auto}
+.banner{aspect-ratio:2180/721;object-fit:contain}
+.small,figcaption,p,h1,h2,h3,a{overflow-wrap:break-word}
+html[dir=rtl] body{font-family:Tahoma,Arial,sans-serif}
+html[dir=rtl] h1,html[dir=rtl] h2,html[dir=rtl] h3,html[dir=rtl] blockquote,html[dir=rtl] .tony-speech{font-family:Tahoma,Arial,sans-serif;letter-spacing:normal;line-height:1.3}
+html[dir=rtl] .eyebrow,html[dir=rtl] .topline,html[dir=rtl] .tag{letter-spacing:normal}
+html[dir=rtl] .section-heading:after{left:auto;right:0;padding:0 0 0 10px}
+html[dir=rtl] .tony-speech:before{left:auto;right:-12px;transform:rotate(225deg)}
+html[dir=rtl] .language-control select{padding:8px 9px 8px 25px}
+html[lang=zh-Hans] h1,html[lang=zh-Hans] h2,html[lang=zh-Hans] h3{line-height:1.2;letter-spacing:0}
+@media(min-width:768px) and (max-width:1100px){
+ .header{gap:10px}.official-logo{width:190px}.header nav{flex-basis:calc(100% - 230px)}
+ .language-control{margin-inline-start:auto}
+ .opening{grid-template-columns:1.15fr 1fr;gap:20px}.opening h1{font-size:clamp(44px,5.7vw,60px)}
+ .arena>.wrap{grid-template-columns:.85fr 1.3fr;gap:20px}
+ .records{gap:14px}.record{padding:10px}.record h3{font-size:22px;min-height:48px}.record-actions{flex-direction:column;align-items:start}
+ .club-layout{gap:22px}.club-copy h2{font-size:34px}.club-copy p{font-size:14px}
+ .talk-layout{gap:20px}.tony-chat-portrait{height:155px}.example .tony-speech{font-size:26px}
+ .merch-layout{grid-template-columns:1.4fr .85fr}.merch h2{font-size:52px}
+}
+@media(max-width:767px){
+ main,.header.wrap,.footer.wrap{width:calc(100% - 16px)}
+ .header.wrap{padding-inline:14px}.header{flex-direction:row;align-items:center;justify-content:space-between;gap:8px}
+ .brand-official{align-self:auto;align-items:start}.official-logo{width:clamp(155px,30vw,210px)}.brand-caption{font-size:8px;letter-spacing:0}
+ .header nav{order:3;flex-basis:100%;justify-content:space-between;gap:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}
+ .header nav a{padding:7px 4px;justify-content:center;text-align:center;font-size:12px;line-height:1.3;min-height:44px}
+ .language-control{gap:4px}.language-control label{position:absolute;width:1px;height:1px;padding:0;overflow:hidden;clip-path:inset(50%)}.language-control select{max-width:135px;font-size:13px}
+ .topline{font-size:9px;letter-spacing:.06em;padding:6px 12px}
+ .opening,.arena>.wrap,.club-layout,.talk-layout,.merch-layout{grid-template-columns:1fr;gap:18px}
+ .opening.wrap,.section.wrap{padding-inline:16px}.opening{padding-block:20px}.opening h1{font-size:clamp(43px,8.5vw,62px)}.opening p{font-size:15px;max-width:none}
+ .opening .secondary{display:inline-flex;align-items:center;min-height:44px;margin-top:3px;font-size:13px}
+ .section{padding-block:26px}.arena,.club,.merch{padding-block:22px}
+ .arena .wrap,.club .wrap,.talk .wrap,.merch .wrap{width:calc(100% - 32px)}
+ .arena-head,.section-heading{display:block}.arena h2{font-size:35px}.arena h2 br{display:none}.arena h2:after{display:none}.arena .aside{margin-top:10px;max-width:none;font-size:14px}
+ .section-heading{margin-bottom:20px}.section-heading p{margin-top:12px;max-width:none;font-size:14px}
+ h2,.club-copy h2{font-size:clamp(32px,6.6vw,43px)}
+ .records{grid-template-columns:1fr;gap:16px}
+ .record{display:grid;grid-template-columns:minmax(110px,.85fr) minmax(0,1.15fr);gap:0 13px;padding:10px;align-content:center}
+ .record img{grid-column:1;grid-row:1/5;height:auto;max-height:240px;align-self:center;border-bottom:0}
+ .record .number,.record h3,.record-actions,.record>.small{grid-column:2}.record .number{margin:4px 0 7px;font-size:10px}.record h3{font-size:clamp(22px,4vw,28px);min-height:0;margin-bottom:10px}
+ .record-actions{flex-direction:column;align-items:start;gap:2px}.record-actions a{min-height:44px;display:inline-flex;align-items:center;font-size:12px}.record .small{font-size:11px;margin-top:4px}
+ .club-copy p{font-size:15px}.club-copy .small{margin-top:12px!important}
+ .talk .section-heading p{font-size:21px}.tony-greeting{grid-template-columns:1fr 1fr}.tony-chat-portrait{height:180px}.example .tony-speech{font-size:31px}.example blockquote{font-size:23px}
+ .stories-grid{grid-template-columns:1fr;gap:18px}.stories-grid h3{font-size:29px}.stories-grid p{font-size:14px}
+ .merch h2{font-size:clamp(43px,8.7vw,57px)}.merch-ticket{width:100%;max-width:360px;justify-self:center}.merch-ticket strong{font-size:27px}.merch a{display:inline-flex;align-items:center;min-height:44px}
+ .maiolica{height:25px;background-size:100px 100px}.footer{align-items:start;flex-direction:column;gap:8px}.footer p{font-size:12px}.footer-brand{margin:0}.footer-brand img{width:125px}
+}
+@media(max-width:370px){.official-logo{width:150px}.language-control select{max-width:120px}.header.wrap{padding-inline:10px}.header nav a{font-size:11px}.record{grid-template-columns:1fr}.record img{grid-column:1;grid-row:auto;width:100%;max-height:245px}.record .number,.record h3,.record-actions,.record>.small{grid-column:1}.record-actions{flex-direction:row;align-items:center;gap:10px}.example .tony-speech{font-size:26px}}
+
