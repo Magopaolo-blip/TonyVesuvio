@@ -1,15 +1,13 @@
-# Tony Vesuvio — sito aggiornato
+# Tony Vesuvio — sito completo
 
-Estrarre lo ZIP e caricare il suo contenuto nella radice del repository GitHub, mantenendo la cartella assets. Sostituire i file con lo stesso nome. Non caricare lo ZIP come singolo file e non creare una cartella contenitore.
+## Caricamento su GitHub
 
-CNAME mantiene tonyvesuvio.com. Il certificato HTTPS si gestisce in Settings → Pages → Enforce HTTPS.
+Estrarre lo ZIP. Caricare nella radice del repository il contenuto estratto, incluse la cartella `assets`, la cartella `la-storia-di-tony`, `index.html`, CSS, JavaScript, `CNAME`, `.nojekyll`, `robots.txt` e `sitemap.xml`. Non caricare lo ZIP come singolo file. Mantenere GitHub Pages configurato sul ramo e sulla cartella già utilizzati dal sito.
 
-Include: social ufficiali, shop Redbubble esistente, layout responsive, immagini fotografiche alleggerite, metadati Open Graph e immagine di condivisione.
+La home rimane `index.html`. La nuova pagina è `la-storia-di-tony/index.html`, raggiungibile da “La storia di Tony” nel menu. I collegamenti sono relativi e funzionano anche su GitHub Pages sotto un percorso di progetto. Il dominio originale `tonyvesuvio.com` è conservato in CNAME e nei metadati.
 
-La visualizzazione delle anteprime dipende anche dalla raggiungibilità HTTPS del dominio e dalla cache di WhatsApp; non è garantito un aggiornamento immediato.
+## Modifiche
 
-## Dillo a Tony — aggiornamento locale
+Rimosse dal solo menu le voci Social, Il mondo di Tony e Il fan club. Le rispettive sezioni sono conservate nella landing. Aggiunta la storia con nove tappe, fotografie ottimizzate WebP e culla corretta. Pulsanti della storia collegati alle sezioni musica e Dillo a Tony della home. Logo e stile riprendono quelli del sito. Sitemap aggiornata.
 
-Risponditore gratuito, senza API o servizi esterni. Italiano: riconoscimento di intenti e contesto temporaneo; anche con interfaccia napoletana le nuove risposte sono in italiano. Le altre lingue conservano il precedente risponditore. Il contesto si azzera ricaricando la pagina, cambiando lingua o scrivendo «ricominciamo». Non invia richieste di ingaggio e non conserva messaggi dopo la chiusura.
-
-Caricare insieme index.html, dillo-a-tony.js e tony-conversation.js nella radice del sito. Nessuna pubblicazione eseguita da questa copia locale. Verifica automatica: node ../test-tony.cjs (20 scenari, 33 messaggi).
+La sottopagina biografica è in italiano; il selettore multilingua della home è conservato. Gli script conversazionali, i collegamenti esterni e le funzioni originali della landing sono mantenuti e richiedono i servizi originari per funzionare online.

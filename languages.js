@@ -3,6 +3,7 @@
  'use strict';
  const codes=['it','en','zh-Hans','ar','fil','nap'];
  const rows=[
+['La storia di Tony','Tony’s story','Tony 的故事','قصة توني','Kuwento ni Tony','’A storia ’e Tony'],
 ["Social","Social","社交媒体","التواصل الاجتماعي","Social","Social"],
 ["Ci vediamo anche qui","Find Tony here, too","也在这里关注 Tony","تابع توني هنا أيضاً","Hanapin din si Tony rito","Ce vedimmo pure ccà"],
 ["Tony, ogni giorno.","Tony, every day.","每天都有 Tony。","توني، كل يوم.","Tony, araw-araw.","Tony, ogne juorno."],
