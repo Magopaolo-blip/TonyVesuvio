@@ -237,4 +237,9 @@ html[lang=zh-Hans] h1,html[lang=zh-Hans] h2,html[lang=zh-Hans] h3{line-height:1.
  .maiolica{height:25px;background-size:100px 100px}.footer{align-items:start;flex-direction:column;gap:8px}.footer p{font-size:12px}.footer-brand{margin:0}.footer-brand img{width:125px}
 }
 @media(max-width:370px){.official-logo{width:150px}.language-control select{max-width:120px}.header.wrap{padding-inline:10px}.header nav a{font-size:11px}.record{grid-template-columns:1fr}.record img{grid-column:1;grid-row:auto;width:100%;max-height:245px}.record .number,.record h3,.record-actions,.record>.small{grid-column:1}.record-actions{flex-direction:row;align-items:center;gap:10px}.example .tony-speech{font-size:26px}}
+.record-cover-link{display:block;grid-column:1;grid-row:1/5;align-self:center;text-decoration:none}
+.record-cover-link img{width:100%;aspect-ratio:1;object-fit:contain}
+.listen{display:inline-flex;align-items:center;justify-content:center;min-height:44px;text-decoration:none;cursor:pointer}
+@media(max-width:767px){.record-cover-link{grid-column:1;grid-row:1/5}.record-cover-link img{max-height:240px}.record .number,.record h3,.record-actions,.record>.small{grid-column:2}}
+@media(max-width:370px){.record-cover-link{grid-column:1;grid-row:auto}.record .number,.record h3,.record-actions,.record>.small{grid-column:1}.record-cover-link img{max-height:245px}}
 

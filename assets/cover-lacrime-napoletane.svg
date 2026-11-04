@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" role="img" aria-labelledby="title desc">
+<title id="title">Lacrime Napoletane — Tony Vesuvio</title><desc id="desc">Copertina poetica blu maiolica con goccia, fiori corallo e dettagli dorati.</desc>
+<rect width="640" height="640" fill="#e9f0e8"/><path d="M0 0h640v64H0zM0 576h640v64H0z" fill="#123e82"/><path d="M26 26h588v588H26z" fill="none" stroke="#bd3f2d" stroke-width="5"/>
+<circle cx="320" cy="290" r="178" fill="#fff5df" stroke="#123e82" stroke-width="9"/><circle cx="320" cy="290" r="155" fill="none" stroke="#bd3f2d" stroke-width="4" stroke-dasharray="3 15"/>
+<path d="M320 154c-46 71-92 118-92 171a92 92 0 0 0 184 0c0-53-46-100-92-171z" fill="#4c9ab1" stroke="#123e82" stroke-width="9"/><path d="M286 343q28 24 61 0" fill="none" stroke="#fff5df" stroke-width="9" stroke-linecap="round"/><circle cx="296" cy="316" r="6" fill="#fff5df"/><circle cx="344" cy="316" r="6" fill="#fff5df"/>
+<g fill="#bd3f2d" stroke="#123e82" stroke-width="4"><path d="M121 200c-27-34 18-49 31-17 13-32 58-17 31 17 27 34-18 49-31 17-13 32-58 17-31-17z"/><path d="M457 208c-27-34 18-49 31-17 13-32 58-17 31 17 27 34-18 49-31 17-13 32-58 17-31-17z"/><path d="M164 396c-23-29 16-42 27-14 11-28 50-15 27 14 23 29-16 42-27 14-11 28-50 15-27-14z"/></g>
+<circle cx="152" cy="200" r="7" fill="#f5cd4a"/><circle cx="488" cy="208" r="7" fill="#f5cd4a"/><circle cx="191" cy="396" r="7" fill="#f5cd4a"/>
+<text x="320" y="500" text-anchor="middle" font-family="Georgia,serif" font-size="43" font-weight="bold" fill="#123e82">LACRIME</text><text x="320" y="544" text-anchor="middle" font-family="Georgia,serif" font-size="39" font-weight="bold" fill="#bd3f2d">NAPOLETANE</text><text x="320" y="570" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" letter-spacing="6" fill="#123e82">TONY VESUVIO</text>
+</svg>

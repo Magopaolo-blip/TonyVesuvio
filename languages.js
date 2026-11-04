@@ -26,7 +26,8 @@
  ['Ogni canzone,','Every song,','每一首歌，','كل أغنية،','Bawat kanta,','Ogne canzona,'],
  ['una piccola storia.','a little story.','都是一个小故事。','حكاية صغيرة.','isang munting kuwento.','na piccerella storia.'],
  ["Scegli il tuo ritornello. C'è quello che ti somiglia e quello da dedicare a qualcuno.",'Pick your chorus. One feels like you; another is for someone special.','选一段副歌：有的唱出你的心情，有的适合送给特别的人。','اختر لازمتك: واحدة تشبهك وأخرى تهديها لشخص عزيز.','Piliin ang iyong koro. May kantang parang ikaw, at may kantang maiaalay sa isang tao.','Sceglie ’o riturnello tujo. Ce sta chillo ca t’assumiglia e chillo ’a dedicà a quaccheduno.'],
- ['▶ Ascolta','▶ Listen','▶ 收听','▶ استمع','▶ Pakinggan','▶ Siente'],
+ ['▶ Ascolta su YouTube','▶ Listen on YouTube','▶ 在 YouTube 收听','▶ استمع على YouTube','▶ Pakinggan sa YouTube','▶ Siente ’ncopp’ a YouTube'],
+ ['Video ufficiale su YouTube.','Official video on YouTube.','YouTube 官方视频。','الفيديو الرسمي على YouTube.','Opisyal na video sa YouTube.','Video ufficiale ’ncopp’ a YouTube.'],
  ['La musica sulla tua tazza ↓','Music on your mug ↓','把音乐带上杯子 ↓','الموسيقى على كوبك ↓','Musika sa iyong tasa ↓','’A museca dint’ ’a tazza toja ↓'],
  ['Anteprima: link di ascolto da aggiungere.','Preview: listening link coming soon.','预览：收听链接尚未添加。','معاينة: سيُضاف رابط الاستماع لاحقاً.','Preview: idaragdag pa ang link ng kanta.','Anteprima: ’o cullegamento pe sentì adda arrivà.'],
  ['Quando basta un tavolino. · Scena di fantasia creata con AI.','Sometimes a little table is enough. · Fictional scene created with AI.','有时，一张小桌就够了。· AI 创作的虚构场景。','أحياناً تكفي طاولة صغيرة. · مشهد خيالي مولّد بالذكاء الاصطناعي.','Minsan, sapat na ang isang maliit na mesa. · Kathang-isip na eksenang ginawa gamit ang AI.','Quanno abbasta nu tavulino. · Scena ’e fantasia fatta cu ll’AI.'],
@@ -86,7 +87,7 @@
  ['Ti sono rimasti in testa?','Still humming along?','旋律还在脑海里回响吗？','ما زالت الأغنية تدور في ذهنك؟','Napapakanta ka pa rin ba?','T’ ’è rimasto ’o riturnello ’ncapa?'],
  ['Iscriviti al canale YouTube di Tony Vesuvio','Subscribe to Tony Vesuvio’s YouTube channel','订阅 Tony Vesuvio 的 YouTube 频道','اشترك في قناة Tony Vesuvio على YouTube','Mag-subscribe sa YouTube channel ni Tony Vesuvio','Abbonate ’o canale YouTube ’e Tony Vesuvio'],
  ['e canta con noi.','and sing along with us.','和我们一起唱吧。','وغنِّ معنا.','at kumanta kasama namin.','e canta cu nuje.'],
- ['Il pulsante apre la ricerca YouTube: aggiungeremo il link diretto appena confermato il canale ufficiale.','This button opens a YouTube search. We’ll add a direct link once the official channel is confirmed.','此按钮会打开 YouTube 搜索。确认官方频道后，我们会添加直达链接。','يفتح هذا الزر بحث YouTube. سنضيف الرابط المباشر بعد تأكيد القناة الرسمية.','Bubuksan ng button ang paghahanap sa YouTube. Idadagdag ang direktang link kapag nakumpirma ang opisyal na channel.','’O buttone apre ’a ricerca YouTube: mettimm ’o link diretto quanno cunfermamm ’o canale ufficiale.'],
+ ['Visita il canale ufficiale e premi Iscriviti.','Visit the official channel and click Subscribe.','前往官方频道并点击“订阅”。','زُر القناة الرسمية واضغط على اشتراك.','Bisitahin ang opisyal na channel at pindutin ang Mag-subscribe.','Va’ ô canale ufficiale e premi Abbonate.'],
  ['Seguici sui social','Follow us on social media','关注我们的社交媒体','تابعنا على وسائل التواصل الاجتماعي','Sundan kami sa social media','Seguìtence ’ncopp’ ’e social'],
  ['I link ufficiali di Instagram, Facebook, TikTok e YouTube saranno aggiunti qui.','Official Instagram, Facebook, TikTok and YouTube links will appear here.','Instagram、Facebook、TikTok 和 YouTube 官方链接将在此处添加。','ستُضاف هنا الروابط الرسمية لـ Instagram وFacebook وTikTok وYouTube.','Ilalagay rito ang mga opisyal na link ng Instagram, Facebook, TikTok at YouTube.','’E link ufficiale ’e Instagram, Facebook, TikTok e YouTube ’e mettimmo ccà.']
  ];
@@ -140,6 +141,9 @@
    else if(key.startsWith('cd-')){
     const title=element.closest('.record').querySelector('h3').textContent;
     element.alt=['CD case mockup: ','CD 包装效果图：','تصور لغلاف قرص: ','Mockup ng CD case: ','Custodia d’ ’o CD: '][index-1]+title;
+   }else if(key.startsWith('cover-')){
+    const title=element.closest('.record').querySelector('h3').textContent;
+    element.alt=['Illustrated cover: ','插画封面：','غلاف مرسوم: ','Iginuhit na cover: ','Copertina ’e fantasia: '][index-1]+title;
    }
   }
   document.title=titles[index]||originalTitle;
