@@ -34,6 +34,7 @@
       saveChoice(choice);
       banner.remove();
       if (choice === 'yes') enableAnalytics();
+      else if (window.__tonyAnalyticsLoaded) window.location.reload();
     });
     document.body.appendChild(banner);
   }
