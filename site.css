@@ -268,3 +268,8 @@ html[lang=zh-Hans] h1,html[lang=zh-Hans] h2,html[lang=zh-Hans] h3{line-height:1.
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.shop-image img{transition:none}}
 
 .youtube-logo{display:inline-block;flex:none;vertical-align:middle}.youtube-cta .button{gap:12px}.youtube-cta .button span{min-width:0}
+
+/* Invito ai contatti nella parte finale della home */
+.contact-invite.wrap{width:100%;background:#fff7e8;padding:34px 36px;display:flex;align-items:center;justify-content:space-between;gap:30px;border-top:4px solid var(--red)}
+.contact-invite h2{font-size:clamp(30px,3.6vw,45px);margin:0 0 9px}.contact-invite .eyebrow{margin-bottom:8px}.contact-invite p{font-size:14px;margin:0;max-width:590px}.contact-invite .button{flex-shrink:0}
+@media(max-width:650px){.contact-invite.wrap{padding:25px 18px;flex-direction:column;align-items:flex-start;gap:19px}}
