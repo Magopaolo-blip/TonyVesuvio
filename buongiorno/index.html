@@ -12,33 +12,53 @@
 <style>
 :root{color-scheme:dark}
 *{box-sizing:border-box}
-body.breakfast-page{min-height:100vh;min-height:100svh;margin:0;background:#102a4b;color:#fff}
-.breakfast-stage{position:relative;isolation:isolate;display:flex;flex-direction:column;min-height:100vh;min-height:100svh;overflow:hidden;padding:max(18px,env(safe-area-inset-top)) max(20px,env(safe-area-inset-right)) max(16px,env(safe-area-inset-bottom)) max(20px,env(safe-area-inset-left));background-image:linear-gradient(180deg,rgba(8,26,50,.36) 0%,rgba(8,26,50,.06) 23%,rgba(8,26,50,.38) 47%,rgba(8,26,50,.94) 100%),url('../assets/tony-volto-social-v2.jpg');background-size:cover;background-position:center 28%}
-.breakfast-stage::after{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(ellipse at 72% 30%,rgba(245,205,74,.14),transparent 42%)}
-.stage-header{width:min(1180px,100%);margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:18px}
-.breakfast-logo{display:block;width:min(225px,50vw);height:auto;filter:drop-shadow(0 4px 16px rgba(0,0,0,.28))}
-.breakfast-home{color:#fff;text-decoration:none;font-weight:700;border:1px solid rgba(255,255,255,.56);border-radius:999px;padding:10px 15px;background:rgba(9,31,60,.3);backdrop-filter:blur(8px)}
-.stage-content{width:min(1180px,100%);margin:auto auto 0;padding:clamp(36px,7vh,86px) 0 0}
+html,body{width:100%;min-height:100%;margin:0}
+body.breakfast-page{min-height:100vh;min-height:100svh;width:100%;max-width:none;margin:0;background:#142d50;color:#fff}
+main.breakfast-stage{position:relative;isolation:isolate;display:flex;flex-direction:column;width:100vw;max-width:none;min-height:100vh;min-height:100svh;margin:0;overflow:hidden;padding:max(18px,env(safe-area-inset-top)) max(24px,env(safe-area-inset-right)) max(16px,env(safe-area-inset-bottom)) max(24px,env(safe-area-inset-left));background:linear-gradient(115deg,#102746 0%,#142d50 58%,#223d61 100%)}
+.stage-portrait{position:absolute;z-index:-1;top:0;right:0;bottom:0;width:min(58vw,900px);background-image:linear-gradient(90deg,#142d50 0%,rgba(20,45,80,.42) 25%,rgba(20,45,80,.04) 62%,rgba(20,45,80,.15) 100%),linear-gradient(0deg,rgba(20,45,80,.72),transparent 40%),url('../assets/tony-volto-social-v2.jpg');background-size:cover;background-position:center 25%;background-repeat:no-repeat}
+.stage-header{position:relative;z-index:2;width:min(1180px,100%);margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:18px}
+.breakfast-logo{display:block;width:min(225px,50vw);height:auto;filter:drop-shadow(0 4px 16px rgba(0,0,0,.3))}
+.breakfast-home{color:#fff;text-decoration:none;font-weight:700;border:1px solid rgba(255,255,255,.56);border-radius:999px;padding:10px 15px;background:rgba(9,31,60,.45);backdrop-filter:blur(8px)}
+.stage-content{position:relative;z-index:1;width:min(680px,56%);margin:auto auto 0 0;padding:clamp(34px,6vh,76px) 0 0}
 .stage-eyebrow{display:inline-block;margin-bottom:14px;color:#ffe18a;font-size:.76rem;font-weight:800;letter-spacing:.17em;text-transform:uppercase;text-shadow:0 2px 12px rgba(0,0,0,.45)}
-.stage-title{max-width:900px;margin:0;font-family:Georgia,'Times New Roman',serif;font-size:clamp(3.1rem,9vw,7.3rem);line-height:.88;letter-spacing:-.055em;text-shadow:0 5px 28px rgba(0,0,0,.33)}
+.stage-title{max-width:780px;margin:0;font-family:Georgia,'Times New Roman',serif;font-size:clamp(3.1rem,7vw,6.3rem);line-height:.9;letter-spacing:-.055em;text-shadow:0 5px 28px rgba(0,0,0,.33)}
 .stage-title em{color:#ffe18a;font-weight:500}
-.stage-greeting{max-width:670px;margin:20px 0 24px;font-family:Georgia,'Times New Roman',serif;font-size:clamp(1.12rem,2.4vw,1.75rem);line-height:1.35;text-shadow:0 2px 14px rgba(0,0,0,.42)}
+.stage-greeting{max-width:600px;margin:18px 0 21px;font-family:Georgia,'Times New Roman',serif;font-size:clamp(1.08rem,1.8vw,1.48rem);line-height:1.35;text-shadow:0 2px 14px rgba(0,0,0,.42)}
 .stage-greeting strong{color:#ffe18a;font-size:1.18em}
-.breakfast-audio{width:min(670px,100%);padding:19px 21px;border:1px solid rgba(255,255,255,.65);border-radius:20px;background:rgba(255,249,235,.94);color:#142d50;box-shadow:0 18px 52px rgba(0,0,0,.2);backdrop-filter:blur(12px)}
-.audio-label{color:#8a5d00;font-size:.7rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
-.breakfast-audio h2{margin:5px 0 0;color:#123e82;font-family:Georgia,'Times New Roman',serif;font-size:clamp(1.25rem,3vw,1.7rem)}
+.breakfast-audio{width:min(630px,100%);padding:17px 19px;border:1px solid rgba(255,255,255,.65);border-radius:18px;background:rgba(255,249,235,.96);color:#142d50;box-shadow:0 18px 52px rgba(0,0,0,.2);backdrop-filter:blur(12px)}
+.audio-label{color:#8a5d00;font-size:.68rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+.breakfast-audio h2{margin:5px 0 0;color:#123e82;font-family:Georgia,'Times New Roman',serif;font-size:clamp(1.2rem,2.4vw,1.55rem)}
 .breakfast-audio p{margin:7px 0 0;line-height:1.45}
-.breakfast-coming{display:flex;align-items:center;gap:11px;margin-top:13px;padding:11px 13px;border-radius:12px;background:#fff0c8;color:#5c4306;font-weight:700;line-height:1.4}
-.breakfast-cup{display:grid;place-items:center;flex:0 0 38px;width:38px;height:38px;border-radius:50%;background:#123e82;color:#fff;font-size:1.15rem}
-.stage-footer{width:min(1180px,100%);margin:16px auto 0;color:rgba(255,255,255,.88);font-size:.76rem;text-shadow:0 1px 10px rgba(0,0,0,.5)}
-@media(min-width:900px){.breakfast-stage{padding-left:max(5vw,env(safe-area-inset-left));padding-right:max(5vw,env(safe-area-inset-right))}.stage-content{padding-bottom:3vh}}
-@media(max-width:560px){.breakfast-stage{background-position:center 21%;padding-left:max(17px,env(safe-area-inset-left));padding-right:max(17px,env(safe-area-inset-right))}.stage-header{align-items:flex-start}.breakfast-logo{width:min(185px,48vw)}.breakfast-home{padding:8px 11px;font-size:.82rem}.stage-content{padding-top:38px}.stage-title{font-size:clamp(3.3rem,15vw,5.3rem)}.stage-greeting{margin:16px 0 19px;font-size:1.15rem}.breakfast-audio{padding:16px;border-radius:17px}.stage-footer{font-size:.7rem}}
-@media(max-height:700px){.stage-content{padding-top:18px}.stage-title{font-size:clamp(2.8rem,8vh,5.2rem)}.stage-greeting{margin:12px 0 15px;font-size:1.08rem}.breakfast-audio{padding:14px 16px}.stage-footer{margin-top:10px}}
+.breakfast-coming{display:flex;align-items:center;gap:10px;margin-top:12px;padding:10px 12px;border-radius:12px;background:#fff0c8;color:#5c4306;font-weight:700;font-size:.92rem;line-height:1.4}
+.breakfast-cup{display:grid;place-items:center;flex:0 0 36px;width:36px;height:36px;border-radius:50%;background:#123e82;color:#fff;font-size:1.08rem}
+.stage-footer{position:relative;z-index:1;width:min(1180px,100%);margin:14px auto 0;color:rgba(255,255,255,.88);font-size:.74rem;text-shadow:0 1px 10px rgba(0,0,0,.5)}
+@media(max-width:760px){
+ main.breakfast-stage{padding-left:max(18px,env(safe-area-inset-left));padding-right:max(18px,env(safe-area-inset-right))}
+ .stage-portrait{top:0;right:0;bottom:auto;width:100%;height:43svh;min-height:250px;background-image:linear-gradient(0deg,#142d50 0%,rgba(20,45,80,.28) 32%,rgba(20,45,80,.04) 72%),url('../assets/tony-volto-social-v2.jpg');background-size:cover;background-position:center 23%}
+ .stage-header{align-items:flex-start}
+ .breakfast-logo{width:min(185px,48vw)}
+ .breakfast-home{padding:8px 11px;font-size:.82rem}
+ .stage-content{width:100%;margin:auto 0 0;padding-top:44svh}
+ .stage-eyebrow{margin-bottom:10px;font-size:.68rem}
+ .stage-title{font-size:clamp(3rem,13vw,4.8rem)}
+ .stage-greeting{margin:13px 0 16px;font-size:1.08rem}
+ .breakfast-audio{padding:15px;border-radius:16px}
+ .breakfast-coming{font-size:.87rem}
+ .stage-footer{font-size:.68rem}
+}
+@media(max-height:700px){
+ .stage-content{padding-top:24px}
+ .stage-title{font-size:clamp(2.7rem,8vh,5rem)}
+ .stage-greeting{margin:10px 0 13px;font-size:1rem}
+ .breakfast-audio{padding:12px 15px}
+ .stage-footer{margin-top:9px}
+}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important}}
 </style>
 </head>
 <body class="breakfast-page">
 <main class="breakfast-stage" id="contenuto" aria-labelledby="titolo">
+<div class="stage-portrait" aria-hidden="true"></div>
 <header class="stage-header">
 <a href="../" aria-label="Tony Vesuvio, torna alla home"><img class="breakfast-logo" src="../assets/logo-ufficiale-tony-vesuvio.png" alt="Tony Vesuvio" width="2120" height="742"></a>
 <a class="breakfast-home" href="../">Torna al sito <span aria-hidden="true">↗</span></a>
