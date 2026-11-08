@@ -16,17 +16,17 @@
 html,body{width:100%;min-height:100%;margin:0}
 body.breakfast-page{min-height:100vh;min-height:100svh;width:100%;max-width:none;margin:0;background:#142d50;color:#fff}
 main.breakfast-stage{position:relative;isolation:isolate;display:flex;flex-direction:column;width:min(880px,100vw);max-width:880px;min-height:100vh;min-height:100svh;margin:0 auto;overflow:hidden;padding:max(18px,env(safe-area-inset-top)) max(24px,env(safe-area-inset-right)) max(16px,env(safe-area-inset-bottom)) max(24px,env(safe-area-inset-left));background-color:#142d50;background-image:linear-gradient(180deg,rgba(8,26,50,.1) 0%,rgba(8,26,50,.03) 36%,rgba(8,26,50,.2) 55%,rgba(8,26,50,.9) 100%),url('../assets/tony-volto-social-v2.jpg');background-size:cover;background-position:center 78%;background-repeat:no-repeat}
-.stage-header{position:relative;z-index:1;width:100%;margin:0;display:flex;align-items:flex-start;justify-content:space-between;gap:14px}
-.breakfast-logo{display:block;width:min(190px,45vw);height:auto;filter:drop-shadow(0 3px 10px rgba(0,0,0,.28))}
-.breakfast-home{color:#fff;text-decoration:none;font-size:.72rem;font-weight:700;border:1px solid rgba(255,255,255,.45);border-radius:999px;padding:8px 12px;background:rgba(9,31,60,.28);backdrop-filter:blur(6px)}
+.stage-header{position:relative;z-index:1;width:100%;margin:0;display:flex;align-items:flex-start;justify-content:center;gap:14px}
+.breakfast-logo{display:block;width:min(420px,78vw);height:auto;filter:drop-shadow(0 3px 14px rgba(0,0,0,.32))}
+.breakfast-home{position:absolute;top:0;right:0;color:#fff;text-decoration:none;font-size:.68rem;font-weight:700;border:1px solid rgba(255,255,255,.45);border-radius:999px;padding:7px 10px;background:rgba(9,31,60,.38);backdrop-filter:blur(6px)}
 .stage-content{position:relative;z-index:1;width:100%;margin:auto 0 0;padding:0 0 clamp(22px,5vh,44px);text-align:center;text-shadow:0 3px 18px rgba(0,0,0,.5)}
 .stage-title{margin:0;color:#fff;font-family:Georgia,'Times New Roman',serif;font-size:clamp(2.35rem,6.5vw,4.35rem);font-weight:700;line-height:.98;letter-spacing:-.035em}
 .stage-title .title-first{color:#ffe18a}
 .stage-subtitle{margin:12px 0 0;color:#fff;font-family:Georgia,'Times New Roman',serif;font-size:clamp(1.25rem,3vw,1.75rem);font-weight:600;line-height:1.15}
 @media(max-width:560px){
  main.breakfast-stage{width:100vw;max-width:none;padding-left:max(18px,env(safe-area-inset-left));padding-right:max(18px,env(safe-area-inset-right));background-size:auto 100%;background-position:center top}
- .breakfast-logo{width:min(155px,43vw)}
- .breakfast-home{font-size:.68rem;padding:7px 10px}
+ .breakfast-logo{width:min(350px,80vw);margin-top:24px}
+ .breakfast-home{top:0;right:0;font-size:.64rem;padding:6px 9px}
  .stage-content{padding-bottom:max(28px,calc(env(safe-area-inset-bottom) + 20px))}
  .stage-title{font-size:clamp(2.35rem,10vw,3.5rem)}
  .stage-title .title-first,.stage-title .title-second{display:block}
